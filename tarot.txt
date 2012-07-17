@@ -1,0 +1,22 @@
+The Fool,New Beginnings,maj00.jpg
+The Magician,Mastery,maj01.jpg
+The High Priestess,Intuition,maj02.jpg
+The Empress,Nuturing,maj03.jpg
+The Emperor,Fathering,maj04.jpg
+The Heirophant,Beliefs and Values,maj05.jpg
+The Lovers,Relationships or Partnerships,maj06.jpg
+The Chariot,Control,maj07.jpg
+Strength,Compassion or Self-Control,maj08.jpg
+The Hermit,Searching or Solitude,maj09.jpg
+Wheel of Fortune,Destiny or Fate,maj10.jpg
+Justice,Balance or Fairness,maj11.jpg
+The Hanged Man,Letting Go or Sacrifice,maj12.jpg
+Death,Transition or Change,maj13.jpg
+Temperance,Moderation or Conservation,maj14.jpg
+The Devil,Face Fears,maj15.jpg
+The Tower,Sudden Change,maj16.jpg
+The Star,Inspiration or Happiness,maj17.jpg
+The Moon,Subconscious or Imagination,maj18.jpg
+The Sun,Enlightened or Growth,maj19.jpg
+Judgement,Transformation or Awakening,maj20.jpg
+The World,Accomplishments or Outcomes,maj21.jpg

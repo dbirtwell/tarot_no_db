@@ -1,0 +1,47 @@
+!!!
+<!-- This dynamic page is using is a HAML to render a random Tarot Card -->
+%html
+  %head
+    %script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
+    
+  %body 
+  
+    :javascript
+      $(document).ready(function() {
+        // alert('Got Here');
+        $('button').on('click', function() {
+          // alert('Selecting another card');
+          // reload current page
+          // location.reload();
+          
+          // load to another location
+          document.location.href = '/';
+          
+          // Do a post to reload the page
+          // $.post('/');
+          
+          //// similar behavior as an HTTP redirect
+          //window.location.replace("http://stackoverflow.com");
+          //
+          //// similar behavior as clicking on a link
+          //window.location.href = "http://stackoverflow.com";
+          
+        });        
+      });  
+  
+    %h1 Tarot for the Day
+    %button Select another card
+    %p This card is generated just for you, along with it's keywords for
+    %p
+      - now_time = ""
+      - t = Time.now
+      - now_time << t.strftime("%A %B %d %Y, time is %I:%M")
+  
+      - # Invoke Helper Method
+      - card_ndx = generate_random_card_id
+      - tarot_text = select_tarot_card card_ndx
+      - tarot_image = select_tarot_card_image card_ndx
+      - @full_image_html = "images/#{tarot_image}"
+    %p= now_time
+    %p= tarot_text
+    %img{:src => @full_image_html}/

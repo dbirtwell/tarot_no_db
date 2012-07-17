@@ -1,0 +1,23 @@
+!!!
+%html
+  %head 
+    %title Tarot for the day
+    %link(rel="stylesheet" href="css/reset-min.css")
+    %link(rel="stylesheet" href="css/styles.css")
+  %body
+    #wrapper
+      #header
+        %h1 Tarot for the day
+        %h2 A Simple Site made with Sinatra and HAML!    
+      #nav
+        %ol
+          %a(href="/")
+            %li Home
+          %a(href="about")
+            %li About 
+      #content
+        =yield 
+      =haml (:sidebar) 
+      #footer
+        %p
+          No Copyright here. Use it as you like, but if it breaks, don't blame me.
